@@ -1,0 +1,820 @@
+$blue: #006491;
+$black: #54565b;
+$green: #30f30d;
+$red: #ed0808;
+$withe: #FFFFFF;
+$blue100: #75c6ec;
+$gray: #708AA5;
+$skygrey: #F2F5FC;
+$ofgrey: #d8e6f688;
+$box: #EEEEEE;
+$acchorad: #eb767693;
+$yy: #c4dfec;
+$vv:#000000b5;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+@mixin h3 {
+    font-size: 30px;
+    color: $blue;
+    margin: 30px 0;
+}
+
+%p {
+    font-size: 16px;
+    margin: 30px 0;
+    color: $gray;
+    font-weight: 500;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu {
+    margin: 10px;
+
+    ul {
+        li {
+            list-style: none;
+
+            a {
+                color: $blue;
+                font-size: 10px;
+                padding: 10px;
+            }
+        }
+    }
+}
+
+button {
+    a {
+        color: $withe;
+    }
+
+    background-color: $red;
+    border: none;
+    padding:5px;
+}
+
+.abc {
+    .w-50 {
+        width: 50%;
+        background-color: $blue;
+        margin-top: 30px;
+        text-align: center;
+
+        .bener {
+            p {
+                color: $withe;
+                font-size: 35px;
+                text-align: center;
+                font-weight: 400px;
+                padding-top: 90px;
+            }
+
+            span {
+                color: $blue100;
+                font-size: 20px;
+                text-align: center;
+                margin-top: 10px;
+            }
+        }
+
+        .btn {
+            a {
+                color: $blue;
+            }
+
+            background-color: $green;
+            width: 370px;
+            height: 50px;
+            border: none;
+            border-radius: 5px;
+            margin:20px auto;
+            font-size: 20px;
+            font-weight: bold;
+            display: block;
+
+
+        }
+    }
+
+    .w-50 {
+        width: 50%;
+        margin-top: 30px;
+
+        .img {
+            width: 100%;
+            background-color: $blue;
+        }
+    }
+}
+
+.heding {
+    h1 {
+        color: $gray;
+        margin: 20px;
+    }
+}
+
+.w-50 {
+    .pizza {
+        img {
+
+            margin: 20px;
+        }
+    }
+}
+
+.w-50 {
+    .pizz {
+        img {
+
+            margin: 20px;
+        }
+    }
+}
+
+.store,
+.store2 {
+    .w-25 {
+        padding: 10px;
+    }
+
+    .box {
+        width: 100%;
+        height: 250px;
+        padding: 32px 16px;
+        text-align: center;
+        border-top: 1px dotted $gray;
+        border-left: 1px dotted $gray;
+        border-right: 1px dotted $gray;
+
+        h3 {
+            font-size: 16px;
+            color: $black;
+            font-weight: 600;
+            margin: 19px 0;
+        }
+
+        p {
+            font-size: 16px;
+            color: $gray;
+            margin: 16px 0;
+        }
+    }
+
+    .sub-box {
+        width: 100%;
+        height: 50px;
+        border-top: 1px dotted $gray;
+        border-left: 1px dotted $gray;
+        border-right: 1px dotted $gray;
+        border-bottom: 1px dotted $gray;
+        text-align: center;
+        padding: 16px 0;
+
+        span {
+            color: $red;
+            font-weight: 600;
+        }
+    }
+}
+
+.tv {
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+    background-color: $ofgrey;
+
+    .offer {
+        h1 {
+            color: $black;
+            font-size: 30px;
+            font-weight: lighter;
+            font-weight: bolder;
+            margin: 30px;
+            letter-spacing: 2px;
+        }
+
+        span {
+            color: $gray;
+            font-size: 20px;
+            font-weight: bolder;
+            padding-left: 30px;
+            letter-spacing: 1px;
+
+            h6 {
+                color: $gray;
+                font-size: 20px;
+                padding-left: 30px;
+                letter-spacing: 1px;
+            }
+        }
+
+        a {
+            img {
+                margin: 20px;
+            }
+        }
+    }
+}
+
+.info {
+    width: 100%;
+    padding: 32px;
+
+    h3 {
+        @include h3;
+    }
+
+    p {
+        @extend %p;
+    }
+}
+
+.dom {
+    background-color: #1a3754;
+    padding: 30px;
+
+    .w-30 {
+        width: 15%;
+
+        h2 {
+            color: #3d5c78;
+            padding: 20px 0;
+        }
+
+        a {
+            display: block;
+
+            h3 {
+                color: white;
+                font-weight: 500;
+                line-height: 40px;
+                transition: all 1.2s;
+            }
+
+            h3:hover {
+                color: #000;
+            }
+        }
+
+        .logos {
+            a {
+                i {
+                    color: $withe;
+                    margin: 10px;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+
+// gieft card
+
+header {
+    width: 100%;
+    height: 80px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu {
+    margin: 30px;
+
+    ul {
+        li {
+            list-style: none;
+
+            a {
+                color: $blue;
+                font-size: 20px;
+                padding: 15px;
+            }
+        }
+    }
+}
+
+button {
+    a {
+        color: $withe;
+    }
+
+    background-color: $red;
+    border: none;
+    padding: 10px;
+}
+
+.gift-img {
+    img {
+        width: 100%;
+    }
+}
+
+.ti {
+    h3 {
+        font-size: 30px;
+        color: $blue;
+        text-align: center;
+        margin: 30px 0;
+    }
+}
+
+.box3 {
+    text-align: center;
+    width: 400px;
+    background-color: $box;
+    border: 1px black solid;
+    border-radius: 10px;
+    margin: 20px;
+
+    h4 {
+        color: $gray;
+        text-align: center;
+        padding: 5px;
+        font-weight: 500;
+    }
+
+    img {
+        width: 300px;
+        height: 150px;
+        margin: 10px 0;
+    }
+
+    p {
+        color: $gray;
+        font-size: 14px;
+        margin: 14px 0;
+        padding: 5px;
+        font-weight: 500;
+    }
+}
+
+.box4 {
+    text-align: center;
+    width: 400px;
+    background-color: $box;
+    border: 1px black solid;
+    border-radius: 10px;
+    margin: 20px;
+
+    h4 {
+        color: $gray;
+        text-align: center;
+        padding: 5px;
+        font-weight: 500;
+    }
+
+    img {
+        width: 300px;
+        height: 150px;
+        margin: 10px 0;
+    }
+
+    p {
+        color: $gray;
+        font-size: 14px;
+        margin: 14px 0;
+        padding: 5px;
+        font-weight: 500;
+    }
+}
+
+.back-pi {
+    background-image: url('../img/di.png');
+    width: 100%;
+    height: 70vh;
+    text-align: center;
+
+    h3 {
+        font-size: 30px;
+        color: $red;
+        text-align: center;
+        padding: 60px 0;
+    }
+
+    img {
+        margin: 28px 0;
+    }
+
+    .btn4 {
+        p {
+            background-color: $red;
+            padding: 10px;
+            width: 100px;
+            border-radius: 9px;
+            font-size: 20px;
+        }
+    }
+}
+
+.store2 {
+    padding: 50px;
+    color: $blue;
+
+    .box {
+        border: none;
+    }
+
+    .sub-box {
+        border: none;
+    }
+
+}
+
+.dom {
+    background-color: #1a3754;
+    padding: 30px;
+
+    .w-30 {
+        width: 15%;
+
+        h2 {
+            color: #3d5c78;
+            padding: 20px 0;
+        }
+
+        a {
+            display: block;
+
+            h3 {
+                color: white;
+                font-weight: 500;
+                line-height: 40px;
+                transition: all 1.2s;
+            }
+
+            h3:hover {
+                color: #000;
+            }
+        }
+
+        .logos {
+            a {
+                i {
+                    color: $withe;
+                    margin: 10px;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+// corporate
+header {
+    width: 100%;
+    height: 80px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu {
+    margin: 10px;
+
+    ul {
+        li {
+            list-style: none;
+
+            a {
+                color: $blue;
+                font-size: 20px;
+                padding: 30px;
+            }
+        }
+    }
+}
+
+button {
+    a {
+        color: $withe;
+    }
+
+    background-color: $red;
+    border: none;
+    padding:10px;
+}
+
+.dom {
+    background-color: #1a3754;
+    padding: 30px;
+
+    .w-30 {
+        width: 15%;
+
+        h2 {
+            color: #3d5c78;
+            padding: 20px 0;
+        }
+
+        a {
+            display: block;
+
+            h3 {
+                color: white;
+                font-weight: 500;
+                line-height: 40px;
+                transition: all 1.2s;
+            }
+
+            h3:hover {
+                color: #000;
+            }
+        }
+
+        .logos {
+            a {
+                i {
+                    color: $withe;
+                    margin: 10px;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+// our
+body {
+    background-color: $acchorad;
+}
+
+.lo {
+    color: $red;
+    font-size: 30px;
+    margin: 30px;
+}
+
+.box5 {
+    width: 500px;
+    height: 500px;
+    background-color: $red;
+    margin: 0px 20px;
+    text-align: center;
+
+    h4 {
+        color: $withe;
+        font-size: 30px;
+        text-align: center;
+        padding: 10px 0;
+        font-weight: 200;
+    }
+
+    img {
+        padding: 20px;
+    }
+
+    p {
+        color: $withe;
+        font-weight: 200;
+        font-size: 15px;
+    }
+
+    .btn6 {
+        width: 100px;
+        height: 30px;
+        background-color: $withe;
+        margin: 20px auto;
+        border: 1px solid $black;
+        border-radius: 10px;
+        text-align: center;
+
+        a {
+            color: $black;
+            font-size: 15px;
+
+        }
+    }
+}
+.dom {
+    
+    background-color: #1a3754;
+    padding: 30px;
+    margin-top: 30px;
+
+    .w-30 {
+        width: 15%;
+
+        h2 {
+            color: #3d5c78;
+            padding: 20px 0;
+        }
+
+        a {
+            display: block;
+
+            h3 {
+                color: white;
+                font-weight: 500;
+                line-height: 40px;
+                transition: all 1.2s;
+            }
+
+            h3:hover {
+                color: #000;
+            }
+        }
+
+        .logos {
+            a {
+                i {
+                    color: $withe;
+                    margin: 10px;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+// corpo
+.w-40 {
+    width: 39%;
+    height: 80vh;
+    background-color: $yy;
+    position: sticky;
+    box-shadow: 10px 5px 10px 0px rgba(0, 0, 0, 0.315);
+}
+
+.w-60 {
+    width: 60%;
+    background-color:$withe;
+    text-align: center;
+    h3{
+        color: $black;
+        font-weight: 400;
+        font-size: 25px;
+        text-align: center;
+        padding: 20px 0;
+    }
+    p{
+        color: $black;
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+        padding: 20px 0;
+    }
+    img{
+        width: 600px;
+        height: 200px;  
+    }
+}
+
+.box-from {
+    padding: 0 20px;
+
+    h2 {
+        color: $black;
+        padding: 20px;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    h3 {
+        font-size: 16px;
+        color: $black;
+        font-weight: 400;
+        padding: 10px;
+    }
+}
+
+::placeholder {
+    font-size: 16px;
+}
+
+input {
+    padding: 5px 10px;
+    width: 80%;
+    margin: 10px 0;
+}
+
+.btn-ctn {
+    /* padding: 20px; */
+    width: 100%;
+
+    h4 {
+        border-radius: 10px;
+        font-size: 20px;
+    }
+}
+h4 {
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;
+    padding: 20px 0;
+    background-color: $red;
+}
+.dom {
+    background-color:$blue;
+    padding: 30px;
+
+    .w-30 {
+        width: 15%;
+
+        h2 {
+            color:$vv;
+            padding: 20px 0;
+        }
+
+        a {
+            display: block;
+
+            h3 {
+                color:$withe;
+                font-weight: 500;
+                line-height: 40px;
+                transition: all 1.2s;
+            }
+
+            h3:hover {
+                color:$black;
+            }
+        }
+
+        .logos {
+            a {
+                i {
+                    color: $withe;
+                    margin: 10px;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+// contek
+.mp {
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+    background-color:$withe;
+    padding: 20px;
+    .number{
+        h5{
+            color: $black;
+            font-size: 24px;
+            padding: 24px 0;
+            font-weight: 500;
+        }  
+        p{
+            color: $black;
+            font-size: 20px;
+            font-weight: 500;
+        }    
+    }
+}
+
+
+
